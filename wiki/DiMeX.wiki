@@ -13,3 +13,6 @@ digital pin *3* to send DMX signals <br>
 digital pin *4* to switch between sending and receiving <br>
 digital pin *5* to receive DMX signals <br>
 The xbee is working just like the "standard" xbee board with the same jumper settings.<br>
+
+=Files=
+DiMeX eagle files http://sjunnesson.googlecode.com/files/DMX_transceiver_20090716.zip 
