@@ -3,7 +3,7 @@
 
 = Introduction =
 
-DiMeX is an open source Arduino shield to enable the Arduino board to communicate over the DMX protocol. The idea is to be able to hang a DiMeX unit at the beginning of a line of lamp and easily control it wireless from a central control point or to add sensor the the line. 
+DiMeX is an open source Arduino shield to enable the Arduino board to communicate over the DMX protocol. The idea is to be able to hang a DiMeX unit at the beginning of a line of lamp and easily control it wireless from a central control point or to add sensor directly at the line. 
 
 
 = Details =
