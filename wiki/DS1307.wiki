@@ -1,0 +1,9 @@
+# introduction DS1307 Real time clock library for Arduino. 
+
+= Introduction =
+
+Library to easily connect a DS1307 real time clock to the arduino platform.  
+
+= Details = 
+
+How to connect http://www.flickr.com/photos/sjunnesson/3344651050/in/set-72157611008616113/
