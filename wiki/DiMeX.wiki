@@ -1,0 +1,15 @@
+#summary Arduino DMX transceiver shield with Xbee
+#labels Featured
+
+= Introduction =
+
+DiMeX is an open source Arduino shield to enable the Arduino board to communicate over the DMX protocol. 
+
+
+= Details =
+
+It uses:<br>
+digital pin *3* to send DMX signals <br>
+digital pin *4* to switch between sending and receiving <br>
+digital pin *5* to receive DMX signals <br>
+
