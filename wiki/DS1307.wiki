@@ -6,5 +6,5 @@ Library to easily connect a DS1307 real time clock to the arduino platform.
 
 = Details = 
 
-How to connect http://www.flickr.com/photos/sjunnesson/3344651050/in/set-72157611008616113/
-Library: 
+How to connect http://www.flickr.com/photos/sjunnesson/3344651050/in/set-72157611008616113/ <br>
+Library: http://sjunnesson.googlecode.com/files/DS1307.rar
