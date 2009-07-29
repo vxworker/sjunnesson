@@ -1,5 +1,5 @@
 #summary Arduino DMX transceiver shield with Xbee
-#labels Featured
+#labels Featured,Arduino
 
 = Introduction =
 
