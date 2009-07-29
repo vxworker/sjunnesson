@@ -1,4 +1,5 @@
 #summary DS1307 Real time clock library for Arduino.
+#labels Arduino
 
 = Introduction =
 
