@@ -1,6 +1,5 @@
 #labels Arduino,Puredata
 = Introduction =
-
 On this page I will collect mixed smaller sketches and patches that just helps you in your work. Most of them are done in bigger projects and might not be completely documented but all of them will be proven working in different projects. 
 
 ----
