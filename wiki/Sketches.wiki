@@ -1,0 +1,18 @@
+#summary Mixed useful sketches ranging from connecting Arduino to PD to averaging analog values.
+
+= Introduction =
+
+On this page I will collect mixed smaller sketches and patches that just helps you in your work. Most of them are done in bigger projects and might not be completely documented but all of them will be proven working in different projects. 
+
+----
+
+==Arduino to PD==
+This is a combination of two sketches. One for Arduino and one for Puredata (PD). It will enable to easily send six values in the range from 6-255 with unique identifiers to Puredata. Usually used for sending a couple of sensor values to Puredata from Arduino when you cant use Firmata. 
+
+The download has two files. One example arduino sketch which shows how to just send one analog value and the receiving PD sketch. 
+
+http://sjunnesson.googlecode.com/files/Arduino_PD.zip 
+
+Made during Interactivos09 in San Sebastian, Spain
+
+----
