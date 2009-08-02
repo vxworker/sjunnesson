@@ -14,3 +14,13 @@ http://sjunnesson.googlecode.com/files/Arduino_PD.zip
 Made during Interactivos09 in San Sebastian, Spain
 
 ----
+
+==Send integer to LCD==
+
+This little code snippet helps with sending integers to a standard LCD using the Arduino. Should be pretty self explaining with just one new function to send the integer.
+
+http://sjunnesson.googlecode.com/files/lcd_integer.pde
+
+Made during Interactivos09 in San Sebastian, Spain
+
+----
