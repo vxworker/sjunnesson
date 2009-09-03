@@ -39,9 +39,9 @@ getlatestUpdate(); returns the latest published status update with the logged in
 
 getFriendsID(); returns all the IDs of friends connected to the user.
 
-getFriendsStatus(int); returns the lastest statusupdate from the supplied int. This is built up in the way that the first added friend is 0 (zero) and then it counts upwards. Will give u a small error message if you are trying to retrieve a to high number. 
+getFriendsStatus(int); returns the latest statusupdate from the supplied number. This is built up in the way that the first added friend is 0 (zero) and then it counts upwards. It will give you a small error message if you are trying to retrieve a to high number. 
 
-http://sjunnesson.googlecode.com/files/twitter_processing.rar
+Example file + library: http://sjunnesson.googlecode.com/files/twitter_processing.rar
 
 More information about the Java library for connecting to twitter can be found here http://yusuke.homeip.net/twitter4j/en/javadoc/index.html
 
