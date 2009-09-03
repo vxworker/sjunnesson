@@ -43,6 +43,8 @@ getFriendsStatus(int); returns the lastest statusupdate from the supplied int. T
 
 http://sjunnesson.googlecode.com/files/twitter_processing.rar
 
+More information about the Java library for connecting to twitter can be found here http://yusuke.homeip.net/twitter4j/en/javadoc/index.html
+
 Made in Malmö, Sweden 3 September 2009
 
 ----
