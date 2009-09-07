@@ -74,4 +74,6 @@ In this page is a great tutorial to AVR timers. How to set them and work with th
 
 http://www.avrfreaks.net/index.php?name=PNphpBB2&file=viewtopic&t=50106&sid=499ddf9fba82769226f02f9b2602f639
 
+or if that link dosnt work  I have reproduced the information here [AVR_timer]
+
 ----
