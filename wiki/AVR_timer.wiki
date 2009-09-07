@@ -1,6 +1,8 @@
 =Newbie's Guide to AVR Timers=
 (C) Dean Camera, 2007
+source and forum: http://www.avrfreaks.net/index.php?name=PNphpBB2&file=viewtopic&t=50106&sid=499ddf9fba82769226f02f9b2602f639 
 
+This is just a replication of that information to be sure it is preserved. Full credit should go to the authors I have no contribution in this. (I just really like the tutorial)
 
 At last! Yet another tutorial, this one covering a topic which is the main source of frustration to those new with AVRs; timers. What are they, and what can they do for us?
 
