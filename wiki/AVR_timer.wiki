@@ -1,12 +1,4 @@
-#summary One-sentence summary of this page.
-
-= Introduction =
-
-Add your content here.
-
-
-= Details =
-Newbie's Guide to AVR Timers
+=Newbie's Guide to AVR Timers=
 (C) Dean Camera, 2007
 
 
@@ -15,7 +7,7 @@ At last! Yet another tutorial, this one covering a topic which is the main sourc
 
 
 
-Introduction - The AVR Timer
+==Introduction - The AVR Timer==
 
 The timer systems on the AVR series of Microcontrollers are complex beasts. They have a myriad of uses ranging from simple delay intervals right up to complex PWM (more on this later) generation. However, despite the surface complexity, the function of the timer subsystem can be condensed into one obvious function: to time.
 
@@ -52,7 +44,7 @@ To start off, we will deal with basic timer functionality and move on from there
 
 
 
-Part One - Timers running at Fcpu
+==Part One - Timers running at Fcpu==
 
 We'll start with a simple example. We'll create a simple program to flash a LED at about 20Hz. Simple, right?
 
@@ -230,7 +222,7 @@ Next, we'll learn about the prescaler so we can try to slow things down a bit.
 
 
 
-Part Two - Prescaled Timers
+==Part Two - Prescaled Timers==
 
 In part one of this tutorial we learned how to set up our 16-bit timer 1 for a 1/20 second delay. This short (to us humans) delay is actually quite long to our AVR - 50,000 cycles in fact at 1MHz. Notice that Timer 1 can only hold a value of 0-65535 - and we've almost reached that! What do we do if we want a longer delay?
 
@@ -354,13 +346,14 @@ Compile it, and we're done! Remembering that our timer runs as soon as it gets a
 
 
 
-Part Three - Long Timer Delays in Firmware
+==Part Three - Long Timer Delays in Firmware==
 
 So far, we've learned how to use the timers in their most basic counting mode to delay a specified duration. However, we've also discovered a limitation of the timers - their maximum duration that their timer count registers can hold. We've managed to get a 1Hz delay out of a prescaled 16-bit timer with a prescale, but what if we want a delay of a minute? An hour? A week or year?
 
 The answer is to create a sort of prescaler of our own in software. By making the hardware timer count to a known delay - say the 1Hz we created earlier - we can increment a variable each time that period is reached, and only act after the counter is reached a certain value. Let's pseudocode this so we can get a better understanding of what we want to do:
 
-Code:{{{
+Code:
+{{{
 Set up LED hardware
 Set up timer
 Initialise counter to 0
@@ -472,7 +465,7 @@ Compile and run, and the LED should toggle once per minute. By extending this te
 
 
 
-Part Four - The CTC Timer Mode
+==Part Four - The CTC Timer Mode==
 
 Up until now, we've been dealing with the timers in a very basic way - starting them counting, then comparing in our main routine against a wanted value. This is rather inefficient - we waste cycles checking the timer's value every time the loop runs, and slightly inaccurate (as the timer may pass our wanted compare value slightly while processing the loop). What if there was a better way?
 
@@ -638,7 +631,7 @@ And there we have it, a working 1Hz LED flasher using the CTC timer mode!
 
 
 
-Part Five - CTC Mode using Interrupts
+==Part Five - CTC Mode using Interrupts==
 
 Important: The interface for defining and working with Interrupts has changed in the more recent versions of WinAVR - please make sure you've updated your installation to the latest version if you encounter errors relating to the unknown macro "ISR".
 
@@ -839,7 +832,7 @@ And our example is finished! Running this will give a nice 1Hz LED flashing, usi
 
 
 
-Part Six - Pure Hardware CTC
+==Part Six - Pure Hardware CTC==
 
 You probably think by now that we've improved our example as much as possible - after all, what more improvements are there to make? Well, it's time to finish of the CTC topic by looking at the hardware outputs.
 
@@ -939,7 +932,7 @@ Simple, isn't it! We've now created the simplest (code-wise) LED flasher possibl
 
 
 
-Part Seven - The Overflow Event
+==Part Seven - The Overflow Event==
 
 Well, now that we've had fun creating a LED flasher via a variety of software and hardware CTC methods, we'll move on to one last LED flashing program. This time we'll be using a different Timer event to manage the toggling of the LED - the overflow.
 
@@ -1176,7 +1169,7 @@ All done! This simple program will cause the LED to toggle each time the overflo
 
 
 
-Part Eight - Overflow as CTC
+==Part Eight - Overflow as CTC==
 
 One neat application of the overflow event is for creating a CTC timer on AVRs which don't support true hardware CTC. It's not as neat as the pure hardware CTC discussed in part six, but faster than the pure software CTC discussed in part two.
 
