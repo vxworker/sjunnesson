@@ -48,3 +48,30 @@ More information about the Java library for connecting to twitter can be found h
 Made in Malmö, Sweden 3 September 2009
 
 ----
+
+==Manipulating bytes at bit level==
+
+Here is a couple of macros that helps you when you are manipulating bits. It works nice with the arduino environment. They basically do what they are named... 
+
+{{{
+#define bit_get(p,m) ((p) & (m))
+#define bit_set(p,m) ((p) |= (m))
+#define bit_clear(p,m) ((p) &= ~(m))
+#define bit_flip(p,m) ((p) ^= (m))
+#define bit_write(c,p,m) (c ? bit_set(p,m) : bit_clear(p,m))
+#define BIT(x) (0x01 << (x))
+#define LONGBIT(x) ((unsigned long)0x00000001 << (x)) 
+
+}}}
+
+More information and source of the macros can be found at http://www.avrfreaks.net/index.php?name=PNphpBB2&file=viewtopic&t=37871 
+
+----
+
+==Newbie's Guide to AVR Timers ==
+
+In this page is a great tutorial to AVR timers. How to set them and work with them. 
+
+http://www.avrfreaks.net/index.php?name=PNphpBB2&file=viewtopic&t=50106&sid=499ddf9fba82769226f02f9b2602f639
+
+----
