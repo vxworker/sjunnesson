@@ -80,12 +80,22 @@ or if that link dosnt work  I have reproduced the information here [AVR_timer]
 ==How to sign your processing JAR files ==
 
 To be able to use for example an microphone input in a application aimed for the web you need to sign your JAR files first. To do this first open up the command prompt. Copy paste in 
+
+
 "C:\Users\David\Desktop\processing-1.0.3\java\bin\keytool" -genkey -alias yourKeyName -validity 10000"
+
  and change the location to wherever you have your processing installed.
 
 This will create a key for you which you then can use to sign your application using this command 
+
+
 "C:\Program Files (x86)\Java\jdk1.6.0_16\bin\jarsigner" -keypass yourKeyPassword -storepass yourStorePassword yourSketch.jar yourKeyName
-Before running the above command you have to navigate to your folder where you have your exported processing application using cd C:\yourPath\Processing\yourSketch\applet
+
+
+Before running the above command you have to navigate to your folder where you have your exported processing application using
+
+ cd C:\yourPath\Processing\yourSketch\applet
+
 
 Repeat the above step for each of the jar files and you should be ready to upload your files to the net for everyone to marvel over. 
 ----
