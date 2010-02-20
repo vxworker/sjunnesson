@@ -76,6 +76,10 @@ http://www.avrfreaks.net/index.php?name=PNphpBB2&file=viewtopic&t=50106&sid=499d
 
 or if that link dosnt work  I have reproduced the information here [AVR_timer]
 
+David Mellis has also written together a nice introduction to AVR found here
+
+http://hlt.media.mit.edu/wiki/index.php/AVR_Programming
+
 ----
 ==How to sign your processing JAR files ==
 
