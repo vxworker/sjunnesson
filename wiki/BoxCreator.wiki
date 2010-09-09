@@ -5,8 +5,7 @@
 
 Box Creator is a tool to be used to create custom sized boxes that is ready to be lasercut. It makes the tedious process of producing press fit boxes with tabs into a simple one click experience available for everyone. This gives the possibility for anyone to have custom made enclouser for any project ranging from a simple penholder to electronic casing in a wide range of materials. The box creator gives the user the option to customize the material thickness, press fit and size making it usable for a broad range of different laser cutters and material combinations. 
 
-Box creator is completley written in processing and it use some non standard, open source, libraries that needs to be downloaded if you desire to modify and continue to develop the software.
-
+Box creator is completley written in processing and it use one non standard, open source, libraries called <a href="http://www.sojamo.de/libraries/controlP5">ControlP5</a> that needs to be downloaded if you desire to modify and continue to develop the software.
 == Instructions==
 
   # Start the box creator software
@@ -17,3 +16,6 @@ Box creator is completley written in processing and it use some non standard, op
   # The pdf will be placed in the same folder as your software and named box****.pdf where **** is the framenumber when you designed the box. This is just to give each design a unique name so that you dont overwrite your old boxes. 
   # Open the pdf with any pdf viewer to view the design or with inkscape/illustrator to edit with for example extra holes for your cables and such.
   # Then it is just to laser it and enjoy! 
+
+
+<a href="http://sjunnesson.googlecode.com/files/box_generator_pressFit_ver2.rar">Download all files </a>
