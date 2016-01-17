@@ -1,0 +1,117 @@
+# Introduction #
+On this page I will collect mixed smaller sketches and patches that just helps you in your work. Most of them are done in bigger projects and might not be completely documented but all of them has been proven working in different projects.
+
+
+---
+
+
+## Arduino to PD ##
+This is a combination of two sketches. One for Arduino and one for Puredata (PD). It will enable to easily send six values in the range from 6-255 with unique identifiers to Puredata. Usually used for sending a couple of sensor values to Puredata from Arduino when you cant use Firmata.
+
+The download has two files. One example arduino sketch which shows how to just send one analog value and the receiving PD sketch.
+
+http://sjunnesson.googlecode.com/files/Arduino_PD.zip
+
+Made during Interactivos09 in San Sebastian, Spain
+
+
+---
+
+
+## Send integer to LCD ##
+
+This little code snippet helps with sending integers to a standard LCD using the Arduino. Should be pretty self explaining with just one new function to send the integer.
+
+http://sjunnesson.googlecode.com/files/lcd_integer.pde
+
+Made during Interactivos09 in San Sebastian, Spain
+
+
+---
+
+
+## Twitter + processing ##
+
+With this code you will be able to easily get up and running using twitter and processing. Just supply your own username and password and u will be able to easily experiment with the different functions.
+
+The code is put together of five different functions:
+
+updateStatus(String); is sending a new Status update to your twitter account.
+
+getAllUpdates(); returns all the Status updates from your twitter account. (hasnt been tested with many tweets just with 20 something...)
+
+getlatestUpdate(); returns the latest published status update with the logged in account
+
+getFriendsID(); returns all the IDs of friends connected to the user.
+
+getFriendsStatus(int); returns the latest statusupdate from the supplied number. This is built up in the way that the first added friend is 0 (zero) and then it counts upwards. It will give you a small error message if you are trying to retrieve a to high number.
+
+Example file + library: http://sjunnesson.googlecode.com/files/twitter_processing.rar
+
+More information about the Java library for connecting to twitter can be found here http://yusuke.homeip.net/twitter4j/en/javadoc/index.html
+
+Made in Malmö, Sweden 3 September 2009
+
+
+---
+
+
+## Manipulating bytes at bit level ##
+
+Here is a couple of macros that helps you when you are manipulating bits. It works nice with the arduino environment. They basically do what they are named...
+
+```
+#define bit_get(p,m) ((p) & (m))
+#define bit_set(p,m) ((p) |= (m))
+#define bit_clear(p,m) ((p) &= ~(m))
+#define bit_flip(p,m) ((p) ^= (m))
+#define bit_write(c,p,m) (c ? bit_set(p,m) : bit_clear(p,m))
+#define BIT(x) (0x01 << (x))
+#define LONGBIT(x) ((unsigned long)0x00000001 << (x)) 
+
+```
+
+More information and source of the macros can be found at http://www.avrfreaks.net/index.php?name=PNphpBB2&file=viewtopic&t=37871
+
+
+---
+
+
+## Newbie's Guide to AVR Timers ##
+
+In this page is a great tutorial to AVR timers. How to set them and work with them.
+
+http://www.avrfreaks.net/index.php?name=PNphpBB2&file=viewtopic&t=50106&sid=499ddf9fba82769226f02f9b2602f639
+
+or if that link dosnt work  I have reproduced the information here [AVR\_timer](AVR_timer.md)
+
+David Mellis has also written together a nice introduction to AVR found here
+
+http://hlt.media.mit.edu/wiki/index.php/AVR_Programming
+
+
+---
+
+## How to sign your processing JAR files ##
+
+To be able to use for example an microphone input in a application aimed for the web you need to sign your JAR files first. To do this first open up the command prompt. Copy paste in
+
+
+"C:\Users\David\Desktop\processing-1.0.3\java\bin\keytool" -genkey -alias yourKeyName -validity 10000"
+
+> and change the location to wherever you have your processing installed.
+
+This will create a key for you which you then can use to sign your application using this command
+
+
+"C:\Program Files (x86)\Java\jdk1.6.0\_16\bin\jarsigner" -keypass yourKeyPassword -storepass yourStorePassword yourSketch.jar yourKeyName
+
+
+Before running the above command you have to navigate to your folder where you have your exported processing application using
+
+> cd C:\yourPath\Processing\yourSketch\applet
+
+
+Repeat the above step for each of the jar files and you should be ready to upload your files to the net for everyone to marvel over.
+
+---

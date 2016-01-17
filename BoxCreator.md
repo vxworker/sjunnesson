@@ -1,0 +1,20 @@
+#Tool to create tabbed boxes ready to be laser cut
+
+# Introduction #
+
+Box Creator is a tool to be used to create custom sized boxes that is ready to be lasercut. It makes the tedious process of producing press fit boxes with tabs into a simple one click experience available for everyone. This gives the possibility for anyone to have custom made enclouser for any project ranging from a simple penholder to electronic casing in a wide range of materials. The box creator gives the user the option to customize the material thickness, press fit and size making it usable for a broad range of different laser cutters and material combinations.
+
+Box creator is completley written in processing and it use one non standard, open source, libraries called <a href='http://www.sojamo.de/libraries/controlP5'>ControlP5</a> that needs to be downloaded if you desire to modify and continue to develop the software.
+## Instructions ##
+
+  1. Start the box creator software
+  1. Use the sliders in the top to create a box with the size and material thichness you desire.
+  1. Once you are done with the size you can optionally add some press fit to your design. It is recommended that you do a test cut with the press fit you select to figure out an appropiate amount for your material and laser combination.
+  1. Anytime during your design you can press C to switch to see how the final outcome will look like. Dont worry if some part of your design is outside the screen all of that will be scaled and corrected at export.
+  1. Once you are satisfied with the design press Spacebar to generate a pdf ready to be lasercut. The circle in the lower right corner will blink and fade once the pdf is saved. This can take a couple  of seconds depending on your system.
+  1. The pdf will be placed in the same folder as your software and named box.pdf where  is the framenumber when you designed the box. This is just to give each design a unique name so that you dont overwrite your old boxes.
+  1. Open the pdf with any pdf viewer to view the design or with inkscape/illustrator to edit with for example extra holes for your cables and such.
+  1. Then it is just to laser it and enjoy!
+
+
+<a href='http://sjunnesson.googlecode.com/files/box_generator_pressFit_ver2.rar'>Download all files </a>
